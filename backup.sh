@@ -59,5 +59,5 @@ zipname=$(echo "k8s-manifest-backup-$(date +"%Y-%m-%d-%H-%M-%S").zip")
 zip -r $zipname ./namespace ./non-namespaced-resources
 
 # copying backup zip to s3 bucket 
-aws s3 cp $zipname s3://tardis-ai-pipelines/manifest-backup/$zipname
+# aws s3 cp $zipname s3://tardis-ai-pipelines/manifest-backup/$zipname
 
