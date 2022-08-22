@@ -60,4 +60,3 @@ zip -r $zipname ./namespace ./non-namespaced-resources
 
 # copying backup zip to s3 bucket 
 aws s3 cp $zipname s3://tardis-ai-pipelines/manifest-backup/$zipname
-
